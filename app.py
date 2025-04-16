@@ -183,7 +183,7 @@ st.write("Predict future sales using AI 🧠📈")
 df = load_data()
 
 # Show available columns in the dataset
-st.write("📊 Columns in your data:", df.columns)
+
 
 # Add a 'Sales' column if not already present
 if 'Sales' not in df.columns:
