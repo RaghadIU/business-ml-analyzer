@@ -10,5 +10,5 @@ def load_data(path):
     return df
 
 if __name__ == "__main__":
-    data_path = "data/sales.csv"  # لازم تجهز ملف مبيعات تجريبي
+    data_path = "data/sales.csv"  
     load_data(data_path)

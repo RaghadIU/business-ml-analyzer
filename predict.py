@@ -29,7 +29,7 @@ def predict_future_sales(days_ahead):
 if __name__ == "__main__":
     days = int(input("🔮 Enter number of days in the future to predict: "))
     
-    # لازم نحمل البيانات هنا عشان نحسب أول يوم
+    
     df = pd.read_csv("data/sales.csv")
     df['Date'] = pd.to_datetime(df['Date'])
     
