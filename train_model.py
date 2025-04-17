@@ -11,7 +11,7 @@ def prepare_data(path):
     df['Date'] = pd.to_datetime(df['Date'])
     df['Total'] = df['Quantity'] * df['Price']
 
-    # تحويل التاريخ إلى رقم (أيام منذ أول تاريخ)
+    
     df = df.sort_values("Date")
     df['Days'] = (df['Date'] - df['Date'].min()).dt.days
 
@@ -24,14 +24,14 @@ def train_and_save_model(df):
     model = LinearRegression()
     model.fit(X, y)
 
-    # حفظ النموذج في ملف
+    
     os.makedirs("models", exist_ok=True)
     with open("models/sales_model.pkl", "wb") as f:
         pickle.dump(model, f)
 
     print("✅ Model trained and saved successfully!")
 
-    # رسم البيانات والنموذج
+    
     plt.scatter(X, y, label="Actual Sales")
     plt.plot(X, model.predict(X), color='red', label="Predicted Sales")
     plt.xlabel("Days since start")

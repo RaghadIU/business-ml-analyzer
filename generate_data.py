@@ -23,4 +23,4 @@ df = pd.DataFrame(rows, columns=["Product", "Quantity", "Price", "Date"])
 os.makedirs("data", exist_ok=True)
 df.to_csv("data/sales.csv", index=False)
 
-print("✅ sales.csv file created successfully in data/")
+print("sales.csv file created successfully in data/")

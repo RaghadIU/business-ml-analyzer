@@ -5,5 +5,5 @@ df = pd.read_csv("company_sales.csv")
 conn = sqlite3.connect("sales_data.db")
 df.to_sql("sales", conn, if_exists="append", index=False)
 
-conn.close()
-print("✅ ")'''
+conn.close()'''
+
