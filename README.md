@@ -9,7 +9,7 @@
 
 1) Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/business-ml-analyzer.git
+git clone https://github.com/RaghadIU/business-ml-analyzer.git
 ```
 ```bash
 cd business-ml-analyzer
