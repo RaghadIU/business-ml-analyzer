@@ -26,6 +26,9 @@ Make sure you have Python 3.7+ installed. Then, run:
 ```bash
 pip install -r requirements.txt
 ```
+```bash
+pip install matplotlib
+```
 4) Setup the Database
 ```bash
 python create_sales_table.py
